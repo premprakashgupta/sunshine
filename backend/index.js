@@ -3,8 +3,12 @@ const app=express();
 const bodyParser = require('body-parser')
 const cookieParse=require('cookie-parser')
 const cors=require('cors');
-const dotenv =require('dotenv');
-dotenv.config({path:"config/config.env"});
+
+if(process.env.NODE_ENV!=='production')
+{
+    require('dotenv').config({path:"config/config.env"});
+    
+}
 const mongoConnection=require('./mongoConnection/mongoConnection');
 const ProductRoute=require('./routes/ProductRoute')
 const UserRoute=require('./routes/UserRoute')
@@ -29,7 +33,7 @@ app.use("/api/ppg",ProductRoute)
 app.use("/api/ppg",UserRoute)
 
 app.use(express.static(path.join(__dirname,'../sunshine/build')))
-app.get('*',(req,res)=>{
+app.get('/',(req,res)=>{
     res.sendFile(path.resolve(__dirname,'../sunshine/build/index.html'))
 })
 
