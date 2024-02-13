@@ -20,7 +20,7 @@ app.use(cookieParse());
 if (process.env.NODE_ENV !== "production") {
   app.use(
     cors({
-      origin: "http://localhost:3000",
+      origin: "http://localhost:4000",
       credentials: true, //access-control-allow-credentials:true
       optionSuccessStatus: 200,
     })
