@@ -153,7 +153,7 @@ export default function Home({loginDetail}){
             </div>
             <div className="cardBox flex space-around align-items-center">
                 {
-                    product.map(item=>(
+                    product?.map(item=>(
                         <div className="card" key={item._id}>
                             <span className={`priceTag ${item.stock ? 'Instock' : 'Outstock'}`}> <span className="rate">  ₹ {item.rate}/Kg</span>
                             <span className="stock_status">{item.stock ? 'In of stock' : 'out of stock'}</span>
