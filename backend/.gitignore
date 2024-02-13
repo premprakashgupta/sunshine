@@ -8,7 +8,7 @@
 /sunshine/coverage
 
 # production
-/sunshine/build
+# /sunshine/build
 
 # misc
 /config/config.env

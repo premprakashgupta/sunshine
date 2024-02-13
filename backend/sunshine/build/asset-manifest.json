@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/static/css/main.a22b0210.css",
+    "main.js": "/static/js/main.a7750363.js",
+    "static/media/background_co.jpg": "/static/media/background_co.362970e769e470950718.jpg",
+    "static/media/wheel.jpg": "/static/media/wheel.a332c35e85cc57e379d7.jpg",
+    "static/media/truck.png": "/static/media/truck.82fccc2a2aba4fc4e040.png",
+    "static/media/banner2.jpg": "/static/media/banner2.a721cea24d95376c6c95.jpg",
+    "static/media/tree.png": "/static/media/tree.153cc7ff5e95c0138b55.png",
+    "static/media/logo.svg": "/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/index.html",
+    "main.a22b0210.css.map": "/static/css/main.a22b0210.css.map",
+    "main.a7750363.js.map": "/static/js/main.a7750363.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a22b0210.css",
+    "static/js/main.a7750363.js"
+  ]
+}
