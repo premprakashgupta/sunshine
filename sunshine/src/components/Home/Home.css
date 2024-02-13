@@ -1,0 +1,253 @@
+main{
+    width: 100%;
+    min-height: 100vh;
+    background-image: url('../../../public/image/banner2.jpg');
+    background-position: center;
+    background-size: cover;
+
+}
+main .content{
+    margin-left: 10%;
+}
+.content p{
+
+    font-size: 22px;
+    font-weight: bold;
+    margin: 0;
+}
+.content h1{
+    margin: 0;
+    font-size: 5rem;
+    color: var(--box-color);
+}
+
+section .desc{
+    font-family: 'Special Elite', cursive;
+    width: 50%;
+    font-size: 1.3rem;
+}
+section .pic{
+    width: 70%;
+    height: auto;
+}
+section .pic img{
+    width: 100%;
+    height: auto;
+}
+section .cardBox{
+    width: 100%;
+    height: auto;
+    flex-wrap: wrap;
+}
+section .cardBox .card{
+    width: 278px;
+    height: auto;
+    cursor: pointer;
+    transition: .5s all ease-in;
+    margin: 10px 0;
+}
+section .cardBox .card:hover{
+    box-shadow: 2px 2px 8px var(--box-color),-2px -2px 8px var(--box-color);
+    background-color: #fff;
+    transform: translateY(-10px);
+}
+section .cardBox .card .card-header{
+    background-color: #fff;
+    padding: 10px;
+}
+section .cardBox .card .card-header img{
+    width: 90%;
+    display: block;
+    margin: auto;
+}
+section .cardBox .card .card-body{
+    padding: 10px;
+    font-family: 'Poppins', sans-serif;
+}
+section .cardBox .card .card-footer{
+    padding: 10px;
+    font-family: 'Poppins', sans-serif;
+}
+.frout{
+    width: 100%;
+    height: auto;
+}
+.frout .content{
+    width: 60%;
+    height: 60%;
+    background-color: var(--box-color);
+    padding: 50px 0;
+}
+.frout .content .innerContent{
+    width: 70%;
+    height: 70%;
+    
+}
+.frout .content .innerContent h1{
+    color: #fff;    
+    font-size: 3.3rem;
+    margin: 20px 0;
+    position: relative;
+}
+.frout .content .innerContent h1::after{
+    content: "";
+    width: 10%;
+    height: 3px;
+    background-color: #fff;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+.frout .content .innerContent p{
+    color: #fff;    
+    font-size: 1.1rem;
+    margin: 20px 0;
+    font-weight: lighter;
+}
+.frout .content .innerContent hr{
+    margin: 30px 0;
+    height: 2px;
+    background-color: #fff;
+    border: 0;
+}
+.gallery .cardBox{
+    transform-style: preserve-3d;
+    transform: perspective(1000);
+}
+.gallery .cardBox .card{
+    width: 270px;
+    height: auto;
+    cursor: pointer;
+    margin: 20px 0;
+    transition: .5s all ease-in;
+    position: relative;
+    transform-style: preserve-3d;
+    transform: perspective(1000);
+}
+.gallery .cardBox .card:hover{
+    box-shadow: -2px -3px 7px #ccc;
+}
+.gallery .cardBox .card::before{
+    content: "";
+  width: 100%;
+  height: 100%;
+  transition: .5s all ease-in;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: translateZ(-2px);
+  box-shadow: inset -2px -3px 7px rgb(71, 70, 70),inset -3px -5px 8px #ccc;
+  background-color: #F9F9F9;
+}
+.gallery .cardBox .card:hover::before{
+    transform: translateY(30px) translateZ(-2px) translateX(-20px);
+}
+.gallery .cardBox .card .priceTag{
+  width: 30%;
+  height: 12%;
+  position: absolute;
+  top: 10px;
+  left: 0;
+ 
+  padding: 3px;
+  font-size: 12px;
+  color: #fff;
+  font-weight: bold;
+  clip-path: polygon(100% 0, 84% 50%, 100% 100%, 0 100%, 0 0);
+  
+}
+.gallery .cardBox .card .priceTag .stock_status{
+    font-size: 7px;
+    display: block;
+    text-align: center;
+    font-weight: lighter;
+}
+
+.contactUs{
+    background-image: url('../../../public/image/background_co.jpg');
+    background-position: center;
+    background-size: cover;
+}
+.contactUs h1{
+    color: #fff;
+}
+.contactUs h1::after{
+    color: #fff;
+}
+.contactUs .mapAndContactForm{
+    width: 80%;
+    height: auto;
+    margin: auto;
+    background-color: #f2f5f7;
+}
+.contactUs .mapAndContactForm .map,.form{
+    flex-direction: column;
+    padding: 20px 30px;
+}
+label{
+    margin: 10px 0;
+    font-weight: bold;
+    display: block;
+    text-align: left;
+    text-transform: capitalize;
+}
+input{
+    width: 90%;
+    padding: 10px;
+    border: 0;
+    outline: 0;
+    box-shadow: inset 2px 2px 4px rgba(255,255,255,.1),
+    inset -2px -2px 12px rgba(255,255,255,.5),
+    inset 2px 2px 8px rgba(255,255,255,.15),
+    inset -2px -2px 8px rgba(255,255,255,1);
+    background-color: #f2f5f7;
+}
+textarea{
+    padding: 10px;
+    width: 90%;
+    border: 0;
+    outline: 0;
+    background-color: #f2f5f7;
+    box-shadow: inset .5px .5px 1px rgba(161, 159, 159, 0.815),inset -.5px -.5px 1px rgba(161, 159, 159, 0.815),inset 2px 2px 4px rgba(255,255,255,.1),inset -2px -2px 12px rgba(255,255,255,.5),inset 2px 2px 8px rgba(255,255,255,.15),inset -2px -2px 8px rgba(255,255,255,1);
+}
+input::placeholder,textarea::placeholder{
+    letter-spacing: 2px;
+    font-size: 14px;
+    text-shadow: 1px 1px 1px rgb(134, 134, 134);
+    color: #fff;
+}
+
+@media(max-width: 770px) {
+    main{
+        background-position: unset;
+    }
+    .content h1{
+        
+        font-size: 3rem;
+        
+    }
+    section .desc{
+        width: 90%;
+        
+    }
+    section h1{
+       font-size: 2rem;
+        
+    }
+    .frout{
+        flex-direction: column;
+    }
+    .frout .content{
+        width: 90%;
+    }
+    .frout .pic{
+        width: 90%;
+    }
+    .frout .pic img{
+        width: 100%;
+    }
+    .contactUs .mapAndContactForm{
+        flex-direction: column;
+        width: 100%;
+    }
+}

@@ -1,0 +1,23 @@
+# dependencies
+/node_modules
+/sunshine/node_modules
+/sunshine/.pnp
+/sunshine/.pnp.js
+
+# testing
+/sunshine/coverage
+
+# production
+/sunshine/build
+
+# misc
+/config/config.env
+/sunshine/.DS_Store
+/sunshine/.env.local
+/sunshine/.env.development.local
+/sunshine/.env.test.local
+/sunshine/.env.production.local
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*

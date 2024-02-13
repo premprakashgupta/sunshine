@@ -1,0 +1,13 @@
+.footer{
+    width: 100%;
+    height: auto;
+    background-color: var(--navbar-color);
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+@media(max-width:770px) {
+    .footer{
+        width: auto;
+    }
+}

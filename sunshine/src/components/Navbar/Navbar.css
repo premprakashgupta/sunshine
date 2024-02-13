@@ -1,0 +1,192 @@
+.navbar{
+    width: 100%;
+    height: 80px;
+    background-color: var(--navbar-color);
+    position: fixed;
+    top: 0;
+    z-index: 99999;
+}
+.navbar .navbar-inner{
+    width: 100%;
+   height: 100%;
+   padding-right: 10px;
+  position: relative;
+}
+.first{
+    width: 30%;
+    height: 100%;
+    position: relative;
+}
+.first span{
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    
+}
+.first span:nth-child(1){
+    width: auto;
+    height: auto;
+}
+.first span:nth-child(2){
+    left: 20px;
+    top: 20px;
+}
+
+.first span img{
+    width: 100%;
+    height: 100%;
+}
+.navbar .row div ul{
+    transition: .5s all ease-in;
+}
+
+.navbar .row div ul li{
+    margin: 0 20px;
+    font-size: 16px;
+    padding: 0 22px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #fff;
+    position: relative;
+}
+.navbar .row div ul li:last-child{
+    position: relative;
+}
+.navbar .row div ul li:last-child:hover > .profileBox{
+    display: flex;
+}
+.navbar .row div ul li .profileBox{
+    width: 200px;
+    height: 250px;
+    background-color: #fff;
+    box-shadow: 2px 4px 8px #ccc;
+    position: absolute;
+    bottom: -270px;
+    right: 0;
+    border-radius: 10px;
+    padding: 10px;
+    flex-direction: column;
+    z-index: 9999;
+    display: none;
+    transition: .5s all ease-in;
+}
+.navbar .row div ul li .profileBox::after{
+    content: "";
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: -5px;
+    right: 20%;
+    background-color: #fff;
+    transform: rotateZ(45deg);
+}
+.navbar .row div ul li .profileBox .profilePic{
+    width: 40%;
+    height: 40%;
+    margin: auto;
+    border: 3px solid #ccc;
+    border-radius: 50%;
+}
+.navbar .row div ul li .profileBox .profilePic img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.navbar .row div ul li .profileBox hr{
+    width: 100%;
+    height: 2px;
+    background-color: #ccc;
+    border: 0;
+}
+.navbar .row div ul li a{
+    color: #fff;
+}
+.navbar .row div ul li a:hover{
+    color: #333;
+}
+.navbar .row div ul li .profileBox a{
+    color: #333;
+}
+.navbar .row div ul li:first-child a{
+    color: #333;
+}
+.menubar{
+    width: 32px;
+    height: 32px;
+    border: 3px solid #fff;
+    flex-direction: column;
+    padding: 4px;
+    display: none;
+}
+.menubar img{
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+.navbar .navbar-inner .second ul li .cartItemNumber{
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: 0;
+    left: 70%;
+    background-color: blue;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+@media(max-width: 770px) {
+    .navbar .row .second{
+        position: absolute;
+        top: 90px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .navbar .row div ul{
+        width: 70vw;
+        height: 0;
+        overflow: hidden;
+        padding: 0px 20px;
+        flex-direction: column;
+        background-color: var(--navbar-color);
+        transition: .5s all ease-in;
+        box-shadow: 2px 3px 7px #fff;
+    }
+    .navbar .row div ul li{
+        padding: 20px 0;
+    }
+    .first{
+        width: 70%;
+    }
+    .first span:nth-child(1){
+        width: 125%;
+        height: 150%;
+    }
+    .menubar{
+        display: flex;
+    }
+    .navbar .row div ul li .profileBox{
+        bottom: 50%;
+        width: 152px;
+        height: 183px
+    }
+    .navbar .row div ul li .profileBox button{
+        margin: 9px 0;
+        padding: 9px 25px;
+    }
+    .navbar .row div ul li .profileBox::after{
+        top: 94%;
+    }
+    .navbar .navbar-inner .second ul li .cartItemNumber{
+        top: 25%;
+    left: 17%;
+    }
+  
+}

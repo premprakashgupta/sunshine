@@ -1,0 +1,145 @@
+.productBox{
+    width: 100%;
+    height: auto;
+    flex-wrap: wrap;
+}
+.productBox .card{
+    width: 290px;
+    height: 523px;
+    margin-bottom: 20px;
+    border: 1px solid #f1f1f1;
+    transition: .5s all ease-in;
+    background-color: #fff;
+    /* overflow: hidden; */
+}
+.productBox .card a{
+    width: 100%;
+    height: 100%;
+    color: #000;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+}
+.productBox .card:hover{
+    transform: scale(1.06);
+    border: 1px solid var(--navbar-color);
+}
+.productBox .card-header{
+    width: auto;
+    height: 50%;
+    padding: 10px;
+}
+.productBox .card-header img{
+    width: 90%;
+    height: 100%;
+    
+    display: block;
+    margin: auto;
+}
+.productBox .card-body{
+    width: auto;
+    height: 30%;
+    padding: 10px;
+    margin: 10px 0;
+    font-family: 'Poppins', sans-serif;
+    /* font-weight: bold; */
+}
+.productBox .card-body p{
+    width: auto;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 70%;
+}
+.productBox .card-footer{
+    width: auto;
+    height: 40px;
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+    
+}
+.productBox .card-footer span{
+    width: 120px;
+    height: 20px;
+    color: #fff;
+    background-color: var(--navbar-color);
+    position: absolute;
+    bottom: 0;
+    left: 30%;
+    transform: translateX(-30%);
+    padding: 3px 10px;
+    text-align: center;
+}
+.paginationBox{
+    width: 40%;
+    height: auto;
+    padding: 5px;
+    margin: auto;
+}
+.paginationBox .pagination{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.paginationBox .pagination .page-item{
+    padding: 8px;
+    color: red;
+    border: 1px solid var(--navbar-color);
+    margin: 0 5px;
+}
+.paginationBox .pagination .page-item:hover{
+    background-color: var(--box-color);
+    
+}
+.paginationBox .pagination .page-item a{
+    padding: 8px;
+    color: red;
+}
+.paginationBox .pagination .page-item a:hover{
+    color: #fff;
+}
+.pageItemActive{
+    background-color: var(--box-color);
+}
+.pageLinkActive{
+    color: #fff !important;
+}
+.apiFeature{
+    min-width: 8%;
+    height: auto;
+    padding:20px;
+    position: fixed;
+    left: 20px;
+    top: 20%;
+    background-color: var(--box-color);
+}
+.apiFeature h3{
+    text-align: center;
+    color: #fff;
+}
+.apiFeature select{
+    padding: 5px;
+    border-radius: 5px;
+}
+@media(max-width:770px) {
+    .paginationBox{
+        width: auto;
+    }
+    .apiFeature{
+        position: relative;
+        width: 100%;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .paginationBox .pagination .page-item:first-child{
+        display: none;
+    }
+    .paginationBox .pagination .page-item:last-child{
+        display: none;
+    }
+    .paginationBox .pagination .page-item a{
+        font-size: 12px;
+    }
+}

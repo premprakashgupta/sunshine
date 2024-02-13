@@ -1,0 +1,242 @@
+.preview_page{
+    min-width: 100vw;
+    margin-top: 90px;
+    min-height: calc(100vh - 400px);
+    background-color: #e5e8eb;
+    padding-bottom: 20px;
+}
+.firstCol,.secondCol{
+    width: 40%;
+    height: 100%;
+}
+.firstCol .carosel{
+    width: 100%;
+    height: 60%;
+    padding: 10px;
+}
+.firstCol .carosel img{
+    width: 90%;
+    height: 90%;
+    display: block;
+    margin: auto;
+}
+.firstCol .reviews{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.firstCol .reviews .rightBtn,.firstCol .reviews .leftBtn{
+    position: absolute;    
+    width: 20px;
+    margin: 0;
+    padding: 10px 20px;
+}
+.firstCol .reviews .rightBtn{
+     
+    top: 53%;
+    right: -6%;
+    border-radius: 50%;
+}
+.firstCol .reviews .leftBtn{
+    top: 29%;
+    height: 72%;
+    width: 10px;
+    border-radius: 0%;
+    left: -50px;
+}
+.firstCol .reviews .reviewBox{
+    width: 100%;
+    min-height: 130px;
+    /* background-color: var(--box-color); */
+    position: relative;
+    overflow-x: hidden;
+    background-image: url('../../../public/image/tree.png');
+    background-size: contain;
+    background-position: center;
+}
+.firstCol .reviews .reviewBox::-webkit-scrollbar{
+    height: 0;
+}
+.firstCol .reviews .reviewBox .content{
+    width: auto;
+    height: 100%;
+    /* background-color: var(--box-color); */
+    transition: .5s all ease-in;
+}
+
+.firstCol .reviews .reviewBox .cardCover{
+    
+    min-width: 550px;
+    height: 100%;
+    /* background-color: var(--box-color); */
+    
+}
+
+.firstCol .reviews .reviewBox .cardCover .card{
+    position: relative;
+    width: 170px;
+    height: 84%;
+    background-color: transparent;
+    padding: 10px;
+    background-image: url('../../../public/image/truck.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+.firstCol .reviews .reviewBox .cardCover .card .username{
+    width: auto;    
+}
+.firstCol .reviews .reviewBox .cardCover .card .username h3{
+    width: 65%;
+   margin: 5px 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #0081EF;
+    font-family: 'Special Elite', cursive;
+    font-size: 13px;
+    padding: 0 10px;
+}
+.firstCol .reviews .reviewBox .cardCover .card .comment p{
+    width: 65%;
+    height: 65px;
+  font-size: 8px;
+    font-weight: unset;
+    color: #fff;
+    padding: 0 10px;
+    text-transform: capitalize;
+}
+.firstCol .reviews .reviewBox .cardCover .card .comment p::first-letter{
+    font-size: 15px;
+}
+.firstCol .reviews .reviewBox .cardCover .card .review{
+    width: auto;   
+    color: red;
+    padding: 0 10px;
+}
+.secondContent{
+    position: relative;
+}
+.secondContent .title{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+.secondContent .title::first-letter{
+    font-size: 3rem;
+}
+.secondContent .desc{
+    margin: 30px 0;
+}
+.secondContent .rateAndstars{
+    margin: 30px 20px;
+    flex-wrap: wrap;
+}
+.secondContent .rateAndstars .rate{
+    font-family: 'Special Elite', cursive;
+    font-size: 2.5rem;
+}
+.secondContent .stockInfo{
+    margin: 30px 20px;
+    font-weight: bold;
+    font-family: 'Special Elite', cursive;
+}
+.secondContent .quantityAndBtn{
+    flex-wrap: wrap;
+}
+.secondContent .quantityAndBtn .quantity{
+    width: 45%;
+    
+}
+.secondContent .quantityAndBtn .quantity span{
+    width: 25%;
+    height: 35px;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bolder;
+    color: var(--navbar-color);
+    border-radius: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f2f5f7;
+    box-shadow: 2px 2px 4px rgba(255,255,255,.1),
+                 -2px -2px 12px rgba(255,255,255,.5),
+                2px 2px 8px rgba(255,255,255,.15),
+                -2px -2px 8px rgba(255,255,255,1);
+                cursor: pointer;
+}
+.secondContent .quantityAndBtn .quantity input{
+    width: 25%;
+    text-align: center;
+    font-family: 'Special Elite', cursive;
+}
+.writeReview{
+    width: 120px;
+    cursor: pointer;
+}
+.writeReview img{
+    width: 100%;
+}
+.reviewForm{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgb(255 255 255 / 94%);
+    display: none;
+    flex-direction: column;
+}
+.reviewForm textarea{
+    width: 200px;
+    height: 200px;
+}
+@media(max-width:770px) {
+    .preview_page{
+       flex-direction: column-reverse;
+       padding-bottom: 50px;
+    }
+    .firstCol,.secondCol{
+        width: 90%;
+    }
+    .secondContent .stockInfo{
+       text-align: center;
+    }
+    .secondContent .quantityAndBtn{
+        justify-content: center;
+        flex-direction: column;
+    }
+    .secondContent .quantityAndBtn .quantity{
+        width: 75%;
+        
+    }
+    .secondContent .quantityAndBtn .quantity span{
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+    }
+    .firstCol .reviews .rightBtn,.firstCol .reviews .leftBtn{
+        position: absolute; 
+          
+        top: 79%;
+        margin: 0;
+    }
+    .firstCol .reviews .rightBtn{
+        top: 0;
+        right: 0;
+        height: 100%;
+        width: 10px;
+        border-radius: 0;
+    }
+    .firstCol .reviews .leftBtn{
+        background-image: url('../../../public/image/wheel.jpg');
+        background-size: cover;
+        background-position: center; 
+        left: 5%;
+        height: unset;
+        border-radius: 50%;
+    }
+}

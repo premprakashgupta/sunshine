@@ -1,0 +1,108 @@
+.cart{
+    margin-top: 100px;
+}
+.product{
+    flex: 8;
+    height: calc(100vh - 100px);
+    overflow-y: scroll;
+    position: relative;
+}
+.product table{
+    text-align: center;
+    width: 80%;
+    margin: auto;
+}
+.product table thead{
+    width: 40%;
+    position: fixed;
+    top: 85px;
+    left: 20%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 5px 10px;
+}
+.product table tbody{
+    width: 100%;
+    min-height: calc(100vh - 100px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.product table tbody tr{
+    width: 100%;
+    display: flex;
+    border-bottom: 2px solid grey;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+.product table tbody tr td{
+    font-family: 'poppins',sans-serif;
+    letter-spacing: 1.5px;
+}
+.product table tbody tr td h2{
+    font-family: 'Special Elite', cursive;
+}
+.product table tbody tr td img{
+    height: 45px;
+    margin-right: 20px;
+}
+.summery{
+    flex: 4;
+   
+}
+.summery .content{
+    width: 75%;
+    margin-top: 20px;
+    background-color: var(--navbar-color);
+    padding: 20px 40px;
+}
+.summery .content div{
+    padding: 10px 0;
+}
+.summery .content div span:first-child{
+    font-family: 'poppins',sans-serif;
+    font-weight: bold;
+    color: #fff;
+    text-transform: capitalize;
+}
+.summery .content div span:nth-child(2){
+    font-family: 'Special Elite', cursive;
+    font-weight: bold;
+    color: #fff;
+}
+.summery .content .payable span:nth-child(2){
+    font-size: 2rem;
+}
+.summery .content hr{
+    background-color: #fff;
+    height: 2px;
+    border: 0;
+}
+.summery .content button{
+    float: right;
+}
+a{
+    color: #fff;
+}
+@media(max-width: 770px) {
+    .cart{
+        flex-direction: column;
+    }
+    .product table tbody tr{
+        flex-direction: column;
+    }
+    .product table tbody tr td{
+        display: block;
+    }
+    .product table thead{
+        left: 8%;
+        width: 75%;
+    }
+    .summery .content .payable span:nth-child(2){
+        font-size: 1.7rem;
+    }
+}
